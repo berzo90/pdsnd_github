@@ -7,8 +7,11 @@ Bikeshare Python
 ### Description
 Python-driven Interactive Environment to explore statistics about Bikesharing data of major US Cities
 
-
 ### Files used
+bikeshare_submitted.py
+washington.csv
+new_york_city.csv
+chicago.csv
 
 ### Credits
 
