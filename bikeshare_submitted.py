@@ -52,7 +52,7 @@ def get_filters():
         else:
             break
     """
-    print('-'*40)
+    print('-'*50)
     return city, month, day
 
 
@@ -116,7 +116,7 @@ def time_stats(df):
     print("{} is the most common hour".format(common_start_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
@@ -143,7 +143,7 @@ def station_stats(df):
     print("{} is most frequent combination of start station and end station trip".format(common_trip))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def trip_duration_stats(df):
@@ -163,7 +163,7 @@ def trip_duration_stats(df):
     print("Average travel time:",average_duration)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def user_stats(df):
@@ -195,7 +195,7 @@ def user_stats(df):
         print('No age data is found')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 def display_data(df):
     user_input = input('\nWould you like to see individual raw data?\nPlease enter yes or no\n').lower()
