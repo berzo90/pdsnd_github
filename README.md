@@ -14,4 +14,4 @@ new_york_city.csv
 chicago.csv
 
 ### Credits
-https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104git c
+https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
