@@ -5,6 +5,8 @@
 Bikeshare Python 
 
 ### Description
+Python-driven Interactive Environment to explore statistics about Bikesharing data of major US Cities
+
 
 ### Files used
 
