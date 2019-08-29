@@ -7,10 +7,10 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
-    print("Hello! Let\'s explore some US bikeshare data!\n")
+    print("Hello! Let\'s explore some US cities bikeshare data!\n")
 
     while True:
-        city = input("Would you like to see data for Chicago, New York City or Washington?\n").lower()
+        city = input("Would you like to visualize data for Chicago, New York City or Washington?\n").lower()
         if city.lower() not in ('chicago', 'new york city', 'washington'):
         #if city not in CITY_DATA.keys():
             print("Sorry, {} is not a valid city. Please type again by entering either 'Chicago', 'New York City' OR 'Washington' again".format(city))
@@ -20,7 +20,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
 
     while True:
-        month = input("which month shall we analyze? | (e.g. for january, please input [1])\n")
+        month = input("which month would you like to analyze? | (e.g. for january, please input [1])\n")
         if month.lower() not in ('1','2','3','4','5','6'):
             print ("please enter the correct input. | (e.g. for january, please input [1])\n")
         else:
@@ -52,7 +52,7 @@ def get_filters():
         else:
             break
     """
-    print('-'*40)
+    print('-'*50)
     return city, month, day
 
 
@@ -116,7 +116,7 @@ def time_stats(df):
     print("{} is the most common hour".format(common_start_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
@@ -143,7 +143,7 @@ def station_stats(df):
     print("{} is most frequent combination of start station and end station trip".format(common_trip))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def trip_duration_stats(df):
@@ -163,7 +163,7 @@ def trip_duration_stats(df):
     print("Average travel time:",average_duration)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def user_stats(df):
@@ -195,7 +195,7 @@ def user_stats(df):
         print('No age data is found')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 def display_data(df):
     user_input = input('\nWould you like to see individual raw data?\nPlease enter yes or no\n').lower()
